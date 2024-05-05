@@ -2,9 +2,9 @@
 date: 2024-04-25
 tags:
   - Academia/MechanicalEngineering/Semester2
+title: Basics of Electrical Engineering Module 1
 ---
-# Basics of Electrical Engineering Module 1
-## DC Circuits
+# DC Circuits
 Power equations $$P=VI=I^2R=\frac{V^2}{R}$$
 where
 - $P$ is power
@@ -27,9 +27,9 @@ where
 - $I$ is the current in the circuit (Calculated from Ohm's law)
 - $(\text{Combination other resistors other than x})$ is the combination of other resistors (in parallel)
 - $R_\text{x}$ is the resistor from which the $I_\text{out}$ is taken from
-## Analysis of DC Circuits
-## Terminology
-### Node
+# Analysis of DC Circuits
+# Terminology
+## Node
 A junction where two or more elements connect is called a node.
 There are two types of nodes
 - **Simple Node**
@@ -37,13 +37,13 @@ There are two types of nodes
 - **Principle Node**
   More than 2 elements are connected and current division rule takes place
 Therefore in **nodal analysis** we only consider **principle node** only.
-#### Reference Node
+### Reference Node
 One node is assigned $V=0$ is considered as reference node. All other nodes are measured relatively to reference node. Most commonly used methods are
 - Negative terminal of the power source
 - Node connected to most number of branches
-### Mesh
+## Mesh
 A loop does not contain any inner loop
-### Voltage Drop
+## Voltage Drop
 Voltage drop occurs when there is a voltage drop on transferring charge between two points. Voltage drop is represented with $V$.
 Representation
 - $+\text{ve}$ during rise in potential
@@ -52,13 +52,13 @@ Dealing with elements
 - **Battery or electric cell**
 	- From positive to negative terminal, fall in potential
 	- From negative to positive terminal, rise in potential
-## Kirchoff's Laws
-### Kirchoff's First Law (Current Law) (Junction Rule)
+# Kirchoff's Laws
+## Kirchoff's First Law (Current Law) (Junction Rule)
 The algebraic sum of all currents entering and leaving node is equal to zero. This is based on **Law of Conservation of Charge**.
-### Kirchoff's Second Law (Voltage Law) (Loop Rule)
+## Kirchoff's Second Law (Voltage Law) (Loop Rule)
 The algebraic sum of all voltages around in a close loop is equal to zero. This is based on the **Law of Conservation of Energy**.
-## Analysis of Circuits
-### Mesh Analysis
+# Analysis of Circuits
+## Mesh Analysis
 Here [Kirchoff's Second Law (Voltage Law) (Loop Rule)](10-19%20Academia/10%20Mechanical%20Engineering/10.02%20Semester%202/BEE%20Module%201.md#Kirchoff's%20Second%20Law%20(Voltage%20Law)%20(Loop%20Rule)) is used for analysis.
 Application
 - Applicable to planar networks only (Non-crossed branches)
@@ -71,13 +71,14 @@ Steps in analysis
 - The voltage through resistor is considered negative.
 - For resistors that are common between more than 1 meshes, consider the flow of current and subtract or add them accordingly. For example, if resistor $R_1$ is common between current flow $I_1$ and $I_2$ flowing clockwise and anticlockwise respectively, the voltage from $R_1$ can be written as $R_1(I_{1}-I_{2})$
 - Solve the system of equations
-### Node Analysis
+## Node Analysis
 Here [Kirchoff's First Law (Current Law) (Junction Rule)](10-19%20Academia/10%20Mechanical%20Engineering/10.02%20Semester%202/BEE%20Module%201.md#Kirchoff's%20First%20Law%20(Current%20Law)%20(Junction%20Rule)) is used for analysis.
 Here we only consider nodes having more than two branches or principle node.
 Application
 - Applicable to planar and non planar networks
 - Equations required to solve nodal analysis = $\text{number of nodes}-1$
->[!tip] When two nodes are beside each other, take a common node between them and ignore the previous two
+>[!tip] 
+>When two nodes are beside each other, take a common node between them and ignore the previous two
 
 Steps in analysis
 - Identify the principle nodes
@@ -85,3 +86,4 @@ Steps in analysis
 - Develop KCL for each loop  by adding the currents flowing from the node
 - Format for obtaining current $\frac{\sum{\text{voltage}}}{\sum{\text{resistance}}}$
 - If any current is provided at a path, just consider the current and nothing else (like resistors)
+To find voltage through a resistor take the term of the selected resistor and substitute the values of calculated voltages as required.

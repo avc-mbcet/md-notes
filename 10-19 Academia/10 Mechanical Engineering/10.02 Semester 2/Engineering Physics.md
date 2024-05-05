@@ -2,9 +2,8 @@
 date: 2024-04-22
 tags:
   - Academia/MechanicalEngineering/Semester2
+title: Engineering Physics
 ---
-# Engineering Physics
-
 Content
 - [Oscillations and Waves](10-19%20Academia/10%20Mechanical%20Engineering/10.02%20Semester%202/Oscillations%20and%20Waves.md)
 - [Wave Optics](10-19%20Academia/10%20Mechanical%20Engineering/10.02%20Semester%202/Wave%20Optics.md)
