@@ -6,7 +6,7 @@ tags:
 ---
 1. Familiarisation of console I/O and operations in C.
 
-1. Display "Hello World"
+1. Display "Hello World".
 ```c
 #include <stdio.h>
 int main() {
@@ -15,7 +15,7 @@ int main() {
 }
 ```
 
-2. Read two numbers, add them and display their sum
+2. Read two numbers, add them and display their sum.
 ```c
 #include <stdio.h>
 int main() {
@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-4. Area of triangle after reading its sides
+4. Area of triangle after reading its sides.
 ```c
 #include <stdio.h>
 
@@ -58,7 +58,7 @@ int main() {
 }
 ```
 
-2. Read two numbers, add them and display their sum
+2. Read three integer values and find largest of three numbers.
 ```c
 #include <stdio.h>
 
@@ -82,7 +82,7 @@ int main() {
 }
 ```
 
-3. Read the radius of a circle, calculate its area and display it
+3. Check whether given year is leap year.
 ```c
 #include <stdio.h>
 
@@ -99,7 +99,7 @@ int main() {
 }
 ```
 
-4. Area of triangle after reading its sides
+4. Display the grade of a student after reading his mark for a subject.
 ```c
 #include <stdio.h>
 
@@ -139,7 +139,7 @@ int main() {
 }
 ```
 
-5. Read 3 integers values and find largest of three numbers.
+5. Read a natural number and check whether the number is prime or not.
 ```c
 #include <stdio.h>
 
@@ -164,7 +164,7 @@ int main() {
 }
 ```
 
-6. Check whether given year is leap year.
+6. Read a Natural number and check whether the number is Armstrong or not.
 ```c
 #include <math.h>
 #include <stdio.h>
@@ -190,7 +190,8 @@ int main() {
   }
 }
 ```
-7. Display the grade of a student after reading his mark for a subject. (Use switch)
+
+7. Display second largest number after reading n numbers from user.
 ```c
 #include <stdio.h>
 
@@ -218,7 +219,7 @@ int main() {
 }
 ```
 
-8. Read a natural number and check whether the number is prime or not.
+8. Read n integers, store them in an array and find their sum and average.
 ```c
 #include <stdio.h>
 int main() {
@@ -241,8 +242,8 @@ int main() {
 }
 ```
 
-9. Read a natural number and check whether the number is Armstrong or not.
-```c
+9. Read n integers, store them in an array and search for an element in the array using an algorithm for Linear Search.
+ ```c
 #include <stdio.h>
 
 int main() {
@@ -270,7 +271,7 @@ int main() {
 }
 ```
 
-10. Display second largest number after reading n numbers from user. (Without array)
+10.Read n integers, store them in an array and sort the elements in the array using Bubble Sort algorithm.
 ```c
 #include <stdio.h>
 
@@ -301,10 +302,10 @@ int main() {
 }
 ```
 
-11. Read n integers, store them in an array and find their sum and average.
+11. Write a program for performing matrix addition, multiplication and finding the transpose.
 ```c
 ```
 
-12. Read n integers, store them in an array and search for an element in the array using an algorithm for Linear Search.
+12. Display the sum of diagonal elements of a matrix.
 ```c
 ```
