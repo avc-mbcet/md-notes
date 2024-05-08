@@ -31,11 +31,13 @@ where
 # Terminology
 ## Node
 A junction where two or more elements connect is called a node.
+
 There are two types of nodes
 - **Simple Node**
   Two elements are connected and current division rule takes place
 - **Principle Node**
   More than 2 elements are connected and current division rule takes place
+
 Therefore in **nodal analysis** we only consider **principle node** only.
 ### Reference Node
 One node is assigned $V=0$ is considered as reference node. All other nodes are measured relatively to reference node. Most commonly used methods are
@@ -45,9 +47,11 @@ One node is assigned $V=0$ is considered as reference node. All other nodes are 
 A loop does not contain any inner loop
 ## Voltage Drop
 Voltage drop occurs when there is a voltage drop on transferring charge between two points. Voltage drop is represented with $V$.
+
 Representation
 - $+\text{ve}$ during rise in potential
 - $-\text{ve}$ during fall in potential
+
 Dealing with elements
 - **Battery or electric cell**
 	- From positive to negative terminal, fall in potential
@@ -60,9 +64,11 @@ The algebraic sum of all voltages around in a close loop is equal to zero. This 
 # Analysis of Circuits
 ## Mesh Analysis
 Here [Kirchoff's Second Law (Voltage Law) (Loop Rule)](10-19%20Academia/10%20Mechanical%20Engineering/10.02%20Semester%202/BEE%20Module%201.md#Kirchoff's%20Second%20Law%20(Voltage%20Law)%20(Loop%20Rule)) is used for analysis.
+
 Application
 - Applicable to planar networks only (Non-crossed branches)
 - Number of equations required to solve electrical network = number of meshes = $\text{number of branches}- (\text{number of nodes} - 1)$
+
 Steps in analysis
 - Identify the meshes
 - Assume the flow of current in clockwise or anticlockwise, preferably in clockwise direction (Ignore the position and orientation of voltage or power supply)
@@ -73,10 +79,13 @@ Steps in analysis
 - Solve the system of equations
 ## Node Analysis
 Here [Kirchoff's First Law (Current Law) (Junction Rule)](10-19%20Academia/10%20Mechanical%20Engineering/10.02%20Semester%202/BEE%20Module%201.md#Kirchoff's%20First%20Law%20(Current%20Law)%20(Junction%20Rule)) is used for analysis.
+
 Here we only consider nodes having more than two branches or principle node.
+
 Application
 - Applicable to planar and non planar networks
 - Equations required to solve nodal analysis = $\text{number of nodes}-1$
+
 >[!tip] 
 >When two nodes are beside each other, take a common node between them and ignore the previous two
 
@@ -86,4 +95,37 @@ Steps in analysis
 - Develop KCL for each loop  by adding the currents flowing from the node
 - Format for obtaining current $\frac{\sum{\text{voltage}}}{\sum{\text{resistance}}}$
 - If any current is provided at a path, just consider the current and nothing else (like resistors)
+
 To find voltage through a resistor take the term of the selected resistor and substitute the values of calculated voltages as required.
+# Magnetic Circuits
+Magnetic Field
+- Space or region, poles experience force
+- Strongest at poles, weakest at centre
+- N-S outside and S-N inside the magnet
+- Closed loops and they do not intersect
+
+Magnetic Flux
+- amount of magnetic field by magnetic source
+- Unit is **Wb**
+- $1 \text{Wb}=10^8 \text{lines}$
+- Magnetic Flux Density is flux per unit area $$B=\frac{\phi}{A}Wbm^{-2}\text{or Tesla}$$
+Magnetomotive Force
+- Force which tends to drive flux through magnetic flux (AT)
+- $$\text{mmf = Number of turns in coil × Current}$$
+- Magnetic Intensity/ Field Strength ($\frac{mmf}{\text{length}}$) $$H=\frac{NI}{l}$$
+
+Permeability
+- Ability to force magnetic flux through medium
+- $$\mu=\frac{B}{H}$$
+  Where
+  - $B$ is magnetic flux density
+  - $H$ is Magnetic field strength
+
+Reluctance
+- Opposition to flow of flux by magnetic circuit
+- $$S=\frac{1}{\mu A}$$
+  Where
+  - $\mu$ is permeability
+  - $A$ is area of cross section
+- $$S=\frac{NI}{\phi}$$
+  

@@ -26,6 +26,7 @@ Here the object is in equilibrium if the following conditions are satisfied
 Theoretical point within an object where its entire weight is considered to be concentrated.
 # Centroid
 The geometrical central point of plane area or the average position of all points in 2 or 3 dimension shape.
+
 The centroid of a figure with respect to reference points can be found out by the following equations
 - $$\bar{x}=\frac{\sum{ax}}{A}$$
 - $$\bar{y}=\frac{\sum{ay}}{A}$$

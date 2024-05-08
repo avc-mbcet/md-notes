@@ -47,7 +47,7 @@ Steps to find the GS for non homogeneous equation
 | ---- | ------------------------------------ | ---------------------------------------------------- |
 | 1    | $ke^{ax}$                            | $R(x)=Ae^{ax}$                                       |
 | 2    | $k\sin ax$ or $k\cos ax$             | $R(x)=A\cos ax+B\sin ax$                             |
-| 3    | $kx^m$                               | $R(x)=k_{0}+k_{1}x+K_{2}x^2+K_{3}x^3+\dots+K_{m}x^m$ |
+| 3    | $kx^m$                               | $R(x)=k_{0}+k_{1}x+k_{2}x^2+k_{3}x^3+\dots+k_{m}x^m$ |
 | 4    | $ke^{ax}\cos bx$ or $ke^{ax}\sin bx$ | $R(x)=e^{ax}(A\cos bx+B\sin bx)$                     |
 - Differentiate as required and substitute it into Ordinary Differential Equation(ODE)
 - Solve for $A$,$B$ or the variables $k_{n}$.
@@ -60,7 +60,9 @@ Steps to find the GS for non homogeneous equation
 - If the solution for $y_p$ is invalid, use modification rule. This is done by multiplying variable (like $x$) to the trial solution. This step is performed till the solution is valid
 ## Method of Variation of Parameters
 When is this used?
+
 This method is used when the $R(x)$ is not in [Non Homogeneous Equations](10-19%20Academia/10%20Mechanical%20Engineering/10.02%20Semester%202/Ordinary%20Differential%20Equations.md#Non%20Homogeneous%20Equations)
+
 Steps performed
 - Find the CF or $y_c$
 - Equate it to $y_{c}=C_{1}y_{1}+C_{2}y_{2}$ to find $y_{1}$ and $y_{2}$

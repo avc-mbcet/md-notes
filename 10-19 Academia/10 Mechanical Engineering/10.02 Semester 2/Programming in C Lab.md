@@ -5,6 +5,7 @@ tags:
   - Academia
 ---
 1. Familiarisation of console I/O and operations in C.
+
 1. Display "Hello World"
 ```c
 #include <stdio.h>
@@ -13,6 +14,7 @@ int main() {
   return 0;
 }
 ```
+
 2. Read two numbers, add them and display their sum
 ```c
 #include <stdio.h>
@@ -25,6 +27,7 @@ int main() {
   return 0;
 }
 ```
+
 3. Read the radius of  a circle, calculate its area and display it
 ```c
 #include <stdio.h>
@@ -38,6 +41,7 @@ int main() {
   return 0;
 }
 ```
+
 4. Area of triangle after reading its sides
 ```c
 #include <stdio.h>
@@ -53,6 +57,7 @@ int main() {
   return 0;
 }
 ```
+
 2. Read two numbers, add them and display their sum
 ```c
 #include <stdio.h>
@@ -76,6 +81,7 @@ int main() {
   }
 }
 ```
+
 3. Read the radius of a circle, calculate its area and display it
 ```c
 #include <stdio.h>
@@ -92,6 +98,7 @@ int main() {
   return 0;
 }
 ```
+
 4. Area of triangle after reading its sides
 ```c
 #include <stdio.h>
@@ -131,6 +138,7 @@ int main() {
   return 0;
 }
 ```
+
 5. Read 3 integers values and find largest of three numbers.
 ```c
 #include <stdio.h>
@@ -155,6 +163,7 @@ int main() {
   return 0;
 }
 ```
+
 6. Check whether given year is leap year.
 ```c
 #include <math.h>
@@ -208,6 +217,7 @@ int main() {
   }
 }
 ```
+
 8. Read a natural number and check whether the number is prime or not.
 ```c
 #include <stdio.h>
@@ -230,6 +240,7 @@ int main() {
   return 0;
 }
 ```
+
 9. Read a natural number and check whether the number is Armstrong or not.
 ```c
 #include <stdio.h>
@@ -258,6 +269,7 @@ int main() {
   }
 }
 ```
+
 10. Display second largest number after reading n numbers from user. (Without array)
 ```c
 #include <stdio.h>
@@ -288,9 +300,11 @@ int main() {
   return 0;
 }
 ```
+
 11. Read n integers, store them in an array and find their sum and average.
 ```c
 ```
+
 12. Read n integers, store them in an array and search for an element in the array using an algorithm for Linear Search.
 ```c
 ```

@@ -3,7 +3,7 @@ date: 2024-05-04
 title: Laser and Photonics
 ---
 # Introduction
-Laser stands for **L**ight** **A**mplification by **S**timulated **E**mission of **R**adiation and can be emitted as light, ultraviolet or X-ray wavelengths.
+Laser stands for **L**ight **A**mplification by **S**timulated **E**mission of **R**adiation and can be emitted as light, ultraviolet or X-ray wavelengths.
 ## Properties of Laser
 - **Directionality**
 	- Highly directional compared to conventional sources of light
@@ -31,6 +31,7 @@ Process
 - Assume an atom at ground state (level 1), where it stays unless some external energy is applied
 - Electromagnetic wave of energy of $h\nu$ is applied
 - Atom moves from level 1 to level 2
+
 Dependencies
 - energy density of incident radiation at frequency
 - number of atoms per unit volume in lower level
@@ -40,19 +41,25 @@ Dependencies
 >The phenomenon of emission of radiation by the natural de-excitation of atoms or molecules is called spontaneous emission
 
 Found in conventional sources of light
+
 Process
 - Consider an atom at energy level 2.
 - The atom **randomly** decays to ground state (level 1)
 - Difference in energy is emitted as photon
+
 Frequency due to transition, $$\nu=\frac{E_{2}-E_{1}}{h}$$
 Here 
 - $h$ is planck's constant
 - $E_{1}$ and $E_{2}$ are energy at levels 1 and 2 respectively
+
 Note that, the decay may also occur in non radiative way and the difference energy is transferred as KE to surrounding molecules
+
 Rate of spontaneous emission = $A_{21}N_{2}$
+
 Here
 - $A_{21}$ is constant of proportionality (Einstein Coefficient)
 - $N_2$ is number of atoms per unit volume
+
 Properties
 - Spontaneous
 - No phase relationship
@@ -68,7 +75,9 @@ Process
 - Excited atoms is forced to give out its energy and decays to ground state
 - Energy difference $E_{2}-E_{1}$ is added to incoming radiation
 - This results in emission of two identical photons which have same phase, direction and energy
+
 Rate of stimulated emission = $B_{21}N_{2}u(\nu)$
+
 Properties
 - Definite phase relationship and coherent
 - Directionality

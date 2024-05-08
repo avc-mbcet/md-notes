@@ -7,7 +7,9 @@ title: How to Read a Journal Article in 10 Minutes or Less
 https://www.youtube.com/watch?v=466X7ti1kcs
 # Why are journal articles hard to read?
 Journal articles are not meant to be read word for word. Rather they are reports. As a student researcher, its important to find and read the parts relevant to the student.
+
 Reading journal articles need training.
+
 Structure of journal articles
 - Title
 - Abstract
@@ -22,6 +24,7 @@ The **title** is long enough to convey
 - Why its being done
 - How's it being done
 - To whom its being done
+
 Or in other words title is the one sentence summary of the article
 ## Abstract
 The **abstract** is miniature version of the article
