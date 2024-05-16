@@ -453,6 +453,7 @@ int main() {
   } else {
     printf("Palindrome");
   }
+  return 0;
 }
 ```
 
@@ -463,6 +464,7 @@ int main() {
 
 int main() {
   char str[20];
+  printf("Enter string: ");
   scanf("%[^\n]", str);
   int i, vowels = 0, consonants = 0, spaces = 0;
   for (i = 0; i < strlen(str); i++) {
@@ -491,7 +493,99 @@ int main() {
     }
   }
   printf("Consonants: %d\nVowels: %d\n Spaces: %d", consonants, vowels, spaces);
+  return 0;
 }
 ```
 
-15. 
+15. Display the first N prime numbers using function
+```c
+#include <stdio.h>
+
+int checkPrime(int N) {
+  int i = 2, flag = 1;
+  while (i < (N / 2)) {
+    if (N % i == 0) {
+      flag = 0;
+      break;
+    } else {
+      i++;
+    }
+  }
+  if (flag == 1) {
+    return 1;
+  } else {
+    return 0;
+  }
+}
+void getPrime(int num) {
+  int i, j = 0;
+  for (i = 2; j < num; i++) {
+    if (checkPrime(i)) {
+      printf("%d\n", i);
+      j++;
+    }
+  }
+}
+int main() {
+  int num;
+  printf("Enter number of prime numbers");
+  scanf("%d", &num);
+  getPrime(num);
+  return 0;
+}
+```
+
+16. Program to find the sum of digits of a number using recursion
+```c
+#include <stdio.h>
+
+int sumOfDigits(int n) {
+  int sum = 0, temp;
+  while (n > 0) {
+    temp = n % 10;
+    sum = sum + temp;
+    n = n / 10;
+  }
+  return sum;
+}
+
+int main() {
+  int num;
+  printf("Enter Number: ");
+  scanf("%d", &num);
+  printf("Sum of digits is %d", sumOfDigits(num));
+  return 0;
+}
+```
+
+17. Using structure, read and print data of n employees (Name, Employee ID, Salary) *Thanks to Saradhy*
+```c
+#include <stdio.h>
+
+struct employee {
+  char name[50];
+  int employee_id;
+  int salary;
+};
+int main() {
+  int i, N;
+  printf("Enter the number of employees\n");
+  scanf("%d", &N);
+  struct employee S[N];
+  for (i = 0; i < N; i++) {
+    printf("Enter name\n");
+    scanf("%s", S[i].name);
+    printf("Enter employee id\n");
+    scanf("%d", &S[i].employee_id);
+    printf("Enter salary\n");
+    scanf("%d", &S[i].salary);
+  }
+  for (i = 0; i < N; i++) {
+    printf("Name is %s,Employee ID is %d,Salary is %d\n", S[i].name,
+           S[i].employee_id, S[i].salary);
+  }
+  return 0;
+}
+```
+
+18. Read the marks of three subjects for n students  of a class and display  their names in the order of rank. (Use array of structure)
