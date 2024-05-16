@@ -128,4 +128,32 @@ Reluctance
   - $\mu$ is permeability
   - $A$ is area of cross section
 - $$S=\frac{NI}{\phi}$$
-  
+# Electromagnetic Induction
+Faraday's law of Electromagnetic Induction
+- Whenever a conductor is placed in a varying magnetic field, an electromotive force is induced. If the conductor circuit is closed, a current is induced, which is called induced current.
+
+Lenz's Law
+- In electromagnetism, statement that an induced electric current flows in a direction such that the current opposes the change that induced it.
+- $$e=-\frac{d\lambda}{dt}=-N \frac{d\phi}{dt}$$
+## Dynamically Induced emf
+- emf induced due to relative motion between conductor and field
+- $$e=Blv\sin \theta$$
+	- If no angle is given$$e=Blv$$
+## Statically Induced emf
+- emf induced without relative motion between conductor and field
+- AC current is used
+- Principle of transformer
+- Unit is Henry
+### Self Induced Emf
+- Emf induced due to change in flux produced by its own winding
+- $$L=\frac{N\phi}{I}$$
+- Reluctance $$e=-L \frac{dT}{dt}$$
+### Mutually Induced Emf
+- Emf induced due to change in flux produced in nearby coil
+- $$M=\frac{N_{2}\phi_{2}}{I_{1}}$$
+- Reluctance $$e=-M \frac{dI_{1}}{dt}$$
+- Coefficient of coupling
+  degree of coupling between two magnetically linked coils or ratio of mutual inductance actually present between the coils to the maximum possible value.
+  $$M=k\sqrt{ L_{1}L_{2}}$$ Where
+  - If $k=0$ magnetically isolated and if $k=1$ tightly coupled
+  - $L_1$ and $L_2$ are the inductance of two coils

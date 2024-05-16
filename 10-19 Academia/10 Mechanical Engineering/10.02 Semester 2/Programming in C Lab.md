@@ -304,8 +304,194 @@ int main() {
 
 11. Write a program for performing matrix addition, multiplication and finding the transpose.
 ```c
+#include <stdio.h>
+
+int main() {
+  int operation, i, j;
+  printf(
+      "Enter operation type.\n1. Addition\n2. Multiplication\n3. Transpose\n");
+  scanf("%d", &operation);
+  switch (operation) {
+  case 1: {
+    int ax, ay;
+    printf("Enter size of Matrix A and B\n");
+    scanf("%d %d", &ax, &ay);
+    int matrixa[ax][ay], matrixb[ax][ay];
+    printf("Enter values for Matrix A\n");
+    for (i = 0; i < ax; i++) {
+      for (j = 0; j < ay; j++) {
+        printf("A[%d,%d]: ", i, j);
+        scanf("%d", &matrixa[i][j]);
+      }
+      printf("\n");
+    }
+    printf("Enter values for Matrix B\n");
+    for (i = 0; i < ax; i++) {
+      for (j = 0; j < ay; j++) {
+        printf("B[%d,%d]: ", i, j);
+        scanf("%d", &matrixb[i][j]);
+      }
+      printf("\n");
+    }
+    printf("Sum of Matrix A and Matrix B\n");
+    for (i = 0; i < ax; i++) {
+      for (j = 0; j < ay; j++) {
+        printf("%d\t", matrixa[i][j] + matrixb[i][j]);
+      }
+      printf("\n");
+    }
+
+  } break;
+  case 2: {
+    int ax, ay, bx, by, sum, m;
+    printf("Enter size of Matrix A(rows columns)\n");
+    scanf("%d %d", &ax, &ay);
+    printf("Enter size of Matrix B(rows columns)\n");
+    scanf("%d %d", &bx, &by);
+    int matrixb[bx][by], matrixa[ax][ay];
+    if (ax != by) {
+      printf("Error! Operation not Supported\n");
+      break;
+    }
+    printf("Enter values for Matrix A\n");
+    for (i = 0; i < ax; i++) {
+      for (j = 0; j < ay; j++) {
+        printf("A[%d,%d]: ", i, j);
+        scanf("%d", &matrixa[i][j]);
+      }
+      printf("\n");
+    }
+    printf("Enter values for Matrix B\n");
+    for (i = 0; i < bx; i++) {
+      for (j = 0; j < by; j++) {
+        printf("B[%d,%d]: ", i, j);
+        scanf("%d", &matrixb[i][j]);
+      }
+      printf("\n");
+    }
+
+    int matrixab[ax][by];
+    for (i = 0; i < ax; i++) {
+      for (m = 0; m < by; m++) {
+        for (j = 0; j < ay; j++) {
+          sum = sum + (matrixa[i][j] * matrixb[j][m]);
+        }
+        printf("%d\t", sum);
+        sum = 0;
+      }
+      printf("\n");
+    }
+  } break;
+  case 3: {
+    int ax, ay;
+    printf("Enter size of Matrix A(rows columns)\n");
+    scanf("%d %d", &ax, &ay);
+    int matrixa[ax][ay];
+    printf("Enter values for Matrix A\n");
+    for (i = 0; i < ax; i++) {
+      for (j = 0; j < ay; j++) {
+        printf("A[%d,%d]: ", i, j);
+        scanf("%d", &matrixa[i][j]);
+      }
+      printf("\n");
+    }
+    printf("Transpose of Matrix A\n");
+    for (i = 0; i < ax; i++) {
+      for (j = 0; j < ay; j++) {
+        printf("%d\t", matrixa[j][i]);
+      }
+      printf("\n");
+    }
+  } break;
+  default:
+    printf("Operation not supported");
+    break;
+  }
+  return 0;
+}
 ```
 
 12. Display the sum of diagonal elements of a matrix.
 ```c
+#include <stdio.h>
+int main() {
+  int sum, m, n, i, j;
+  printf("Enter the order of matrix A\n");
+  scanf("%d %d", &m, &n);
+  int A[m][n];
+  for (i = 0; i < m; i++) {
+    for (j = 0; j < n; j++) {
+      printf("A[%d,%d]: ", i, j);
+      scanf("%d", &A[i][j]);
+    }
+    printf("\n");
+  }
+  for (i = 0; i < m; i++) {
+    sum = sum + A[i][i];
+  }
+  printf("Sum=%d", sum);
+  return 0;
+}
 ```
+
+13. Read a string(word), store it in array and check whether it is a palindrome word or not
+```c
+#include <string.h>
+int main() {
+  char str[20];
+  printf("Enter the string: ");
+  scanf("%[^\n]", str);
+  int i, len = strlen(str), flag = 0;
+  for (i = 0; i < len / 2; i++) {
+    if (str[i] != str[len - i - 1]) {
+      flag = 1;
+      break;
+    }
+  }
+  if (flag == 1) {
+    printf("Not Palindrone");
+  } else {
+    printf("Palindrome");
+  }
+}
+```
+
+14. Read a string (ending with $ symbol), store it in an array and count the number of vowels, consonants and spaces in it.
+```c
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+  char str[20];
+  scanf("%[^\n]", str);
+  int i, vowels = 0, consonants = 0, spaces = 0;
+  for (i = 0; i < strlen(str); i++) {
+    switch (str[i]) {
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u': {
+      vowels++;
+      break;
+    }
+    case ' ': {
+      spaces++;
+      break;
+    }
+    default: {
+      consonants++;
+      break;
+    }
+    }
+  }
+  printf("Consonants: %d\nVowels: %d\n Spaces: %d", consonants, vowels, spaces);
+}
+```
+
+15. 
