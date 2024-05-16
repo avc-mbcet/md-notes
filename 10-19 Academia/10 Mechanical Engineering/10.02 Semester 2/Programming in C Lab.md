@@ -528,7 +528,7 @@ void getPrime(int num) {
 }
 int main() {
   int num;
-  printf("Enter number of prime numbers");
+  printf("Enter number of prime numbers to display: ");
   scanf("%d", &num);
   getPrime(num);
   return 0;
@@ -589,3 +589,50 @@ int main() {
 ```
 
 18. Read the marks of three subjects for n students  of a class and display  their names in the order of rank. (Use array of structure)
+```c
+#include <stdio.h>
+
+struct student {
+  char name[50];
+  int subjectA;
+  int subjectB;
+  int subjectC;
+};
+void sort(struct student S[], int n) {
+  int i, j;
+  struct student t;
+  for (i = 0; i < n - 1; i++) {
+    for (j = 0; j < n - i - 1; j++) {
+      if ((S[j].subjectA + S[j].subjectB + S[j].subjectC) <
+          (S[j + 1].subjectA + S[j + 1].subjectB + S[j + 1].subjectC)) {
+        t = S[j];
+        S[j] = S[j + 1];
+        S[j + 1] = t;
+      }
+    }
+  }
+}
+int main() {
+  int i, N;
+  printf("Enter the number of students\n");
+  scanf("%d", &N);
+  struct student S[N];
+  for (i = 0; i < N; i++) {
+    printf("Enter name\n");
+    scanf("%s", S[i].name);
+    printf("Enter Subject A\n");
+    scanf("%d", &S[i].subjectA);
+    printf("Enter Subject B\n");
+    scanf("%d", &S[i].subjectB);
+    printf("Enter Subject C\n");
+    scanf("%d", &S[i].subjectC);
+  }
+  sort(S, N);
+  printf("Name\n");
+  for (i = 0; i < N; i++) {
+    printf("%s\n", S[i].name);
+  }
+  return 0;
+}
+
+```
